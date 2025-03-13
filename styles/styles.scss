@@ -1,0 +1,58 @@
+@import url(./reset.css);
+@import "./variables.scss";
+
+
+// Often used Styles
+
+.main-font{
+    font-size: 16px;
+    font-family: $main_font;
+    font-weight: 400;
+}
+
+// Styles
+
+.main-container{
+    max-width: 1920px;
+}
+body{
+    min-width: 1920px
+}
+.header{
+    padding: 30px 120px;
+    a{
+        text-decoration: none;
+    }
+    .right-header-box{
+        gap: 40px;
+    }
+    .header_title{
+        font-size: 31px;
+        font-family: $header_fontFamily;
+        color: $main_color;
+        font-weight: 600;
+    }
+    .create-new-worker{
+        padding: 10px 20px;
+        outline: 1px $main_color solid;
+        border-radius: 5px;
+        @include color-backcolor(black, white);
+        transition: outline 0.2s ease;
+        &:hover{
+            outline: 1px $hover_color solid;
+        }
+    }
+    .create-new-homework{
+        padding: 10px 20px;
+        border-radius: 5px;
+        @include color-backcolor(white, $main_color);
+        transition: background-color 0.2s ease;
+        .add_icon{
+            width: 18px;
+            height: 18px;
+        }
+        &:hover{
+            background-color: $hover_color;
+        }
+    }
+}

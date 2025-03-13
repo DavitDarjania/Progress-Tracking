@@ -1,1 +1,57 @@
-/*# sourceMappingURL=styles.css.map */
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://cdn.jsdelivr.net/fontsource/fonts/firago@latest/latin-400-normal.woff2");
+.main-font {
+  font-size: 16px;
+  font-family: "FiraGO";
+  font-weight: 400;
+}
+
+.main-container {
+  max-width: 1920px;
+}
+
+body {
+  min-width: 1920px;
+}
+
+.header {
+  padding: 30px 120px;
+}
+.header a {
+  text-decoration: none;
+}
+.header .right-header-box {
+  gap: 40px;
+}
+.header .header_title {
+  font-size: 31px;
+  font-family: "Fredoka", sans-serif;
+  color: #8338EC;
+  font-weight: 600;
+}
+.header .create-new-worker {
+  padding: 10px 20px;
+  outline: 1px #8338EC solid;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+  transition: outline 0.2s ease;
+}
+.header .create-new-worker:hover {
+  outline: 1px #B588F4 solid;
+}
+.header .create-new-homework {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: #8338EC;
+  transition: background-color 0.2s ease;
+}
+.header .create-new-homework .add_icon {
+  width: 18px;
+  height: 18px;
+}
+.header .create-new-homework:hover {
+  background-color: #B588F4;
+}/*# sourceMappingURL=styles.css.map */
