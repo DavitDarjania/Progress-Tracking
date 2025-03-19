@@ -1,2 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
-@import url("https://cdn.jsdelivr.net/fontsource/fonts/firago@latest/latin-400-normal.woff2");/*# sourceMappingURL=variables.css.map */
+@font-face {
+  font-family: "FiraGo-400";
+  src: url(../fonts/FiraGO-Regular.otf);
+}/*# sourceMappingURL=variables.css.map */

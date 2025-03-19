@@ -13,13 +13,12 @@
 // Styles
 
 .main-container{
+    width: 100%;
     max-width: 1920px;
-}
-body{
-    min-width: 1920px
+    padding: 0 120px;
 }
 .header{
-    padding: 30px 120px;
+    padding: 30px 0;
     a{
         text-decoration: none;
     }
@@ -54,5 +53,70 @@ body{
         &:hover{
             background-color: $hover_color;
         }
+    }
+}
+.assignment-section{
+    .assignment_title{
+        font-size: 34px;
+        font-weight: 600;
+        margin-top: 40px;
+        letter-spacing: 0%;
+    }
+    .filter-seciton{
+        border: 1px $filter_color solid;
+        border-radius: 10px;
+        gap: 45px;
+        margin-top: 50px;
+        .department, .priority, .employee{
+            width: 199px;
+            height: 44px;
+            cursor: pointer;
+        }
+        .filter_name{
+            font-family: $main_font;
+            font-size: 16px;
+        }
+        .filter_icon{
+            width: 24px;
+            aspect-ratio: 1/1;
+        }
+    }
+    [class^="filter-hidden"]{
+        border: 1px $filter_color solid;
+        border-radius: 10px;
+        top: 100%;
+        padding: 40px 30px 20px 30px;
+        display: none;
+        .custom-checkbox {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .custom-checkbox input {
+            display: none;
+        }
+        
+        .custom-checkbox .checkmark {
+            width: 22px;
+            aspect-ratio: 1/1;
+            border: 2px solid $main_color;
+            border-radius: 5px;
+            display: inline-block;
+            position: relative;
+            margin-right: 8px;
+        }
+        .custom-checkbox input:checked + .checkmark::after {
+            content: '';
+            background-image: url(../assets/icons/Vector.png);
+            position: absolute;
+            width: 20px;
+            height: 19px;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: $main_color;
+        }
+        
     }
 }

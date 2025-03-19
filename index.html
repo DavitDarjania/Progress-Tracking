@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
-  <body>
+  <body class="d-flex justify-content-center">
     <div class="main-container border border-dark">
         <div class="header d-flex justify-content-between border border-dark">
             <a class="d-flex" href="./index.html">
@@ -28,9 +28,34 @@
                 </a>
             </div>
         </div>
+
+        <div class="assignment-section d-flex flex-column align-items-start">
+            <h1 class="assignment_title main-font">დავალებების გვერდი</h1>
+            <div class="filter-seciton d-flex position-relative">
+              <div class="department d-flex align-items-center justify-content-center">
+                <h5 class="filter_name">დეპარტამენტი</h5>
+                <img class="ms-1 filter_icon" src="./assets/icons/Icon.png" alt="">
+              </div>
+              <div class="priority d-flex align-items-center justify-content-center">
+                <h5 class="filter_name">პრიორიტეტი</h5>
+                <img class="ms-1 filter_icon" src="./assets/icons/Icon.png" alt="">
+              </div>
+              <div class="employee d-flex align-items-center justify-content-center">
+                <h5 class="filter_name">თანამშრომელი</h5>
+                <img class="ms-1 filter_icon" src="./assets/icons/Icon.png" alt="">
+              </div>
+              <div class="filter-hidden1 flex-column align-items-start  position-absolute w-100">
+                
+              </div>
+              <div class="filter-hidden2 flex-column align-items-start position-absolute w-100">
+              </div>
+              <div class="filter-hidden3 flex-column align-items-start position-absolute w-100">
+              </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="./scripts/main.js"></script>
+    <script src="./scripts/main.js" type="module"></script>
   </body>
 </html>
