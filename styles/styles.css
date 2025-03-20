@@ -2,7 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 @font-face {
   font-family: "FiraGo-400";
-  src: url(../fonts/FiraGO-Regular.otf);
+  src: url(../fonts/FiraGO-Regular.ttf);
+}
+@font-face {
+  font-family: "FiraGo-500";
+  src: url(../fonts/FiraGO-Medium.ttf);
 }
 .main-font {
   font-size: 16px;
@@ -69,12 +73,15 @@
   gap: 45px;
   margin-top: 50px;
 }
+.assignment-section .filter-seciton .filter_active {
+  color: #8338EC;
+}
 .assignment-section .filter-seciton .department, .assignment-section .filter-seciton .priority, .assignment-section .filter-seciton .employee {
   width: 199px;
   height: 44px;
   cursor: pointer;
 }
-.assignment-section .filter-seciton .filter_name {
+.assignment-section .filter-seciton [class^=filter_name] {
   font-family: "FiraGo-400", sans-serif;
   font-size: 16px;
 }
@@ -88,6 +95,18 @@
   top: 100%;
   padding: 40px 30px 20px 30px;
   display: none;
+  background-color: white;
+}
+.assignment-section [class^=filter-hidden] .selecting_button1, .assignment-section [class^=filter-hidden] .selecting_button2, .assignment-section [class^=filter-hidden] .selecting_button3 {
+  padding: 8px 20px;
+  background-color: #8338EC;
+  color: white;
+  font-family: "FiraGo-400", sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
+}
+.assignment-section [class^=filter-hidden] .selecting_button1:hover, .assignment-section [class^=filter-hidden] .selecting_button2:hover, .assignment-section [class^=filter-hidden] .selecting_button3:hover {
+  background-color: #B588F4;
 }
 .assignment-section [class^=filter-hidden] .custom-checkbox {
   display: flex;
@@ -116,4 +135,134 @@
   background-repeat: no-repeat;
   background-position: center;
   color: #8338EC;
+}
+
+.starting-cards-section {
+  margin-top: 70px;
+}
+.starting-cards-section .cards_header1, .starting-cards-section .cards_header2, .starting-cards-section .cards_header3, .starting-cards-section .cards_header4 {
+  padding: 15px 0;
+  border-radius: 10px;
+}
+.starting-cards-section .cards_header1 h5, .starting-cards-section .cards_header2 h5, .starting-cards-section .cards_header3 h5, .starting-cards-section .cards_header4 h5 {
+  font-family: "FiraGo-400", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.starting-cards-section .cards_header1 {
+  background-color: #F7BC30;
+}
+.starting-cards-section .cards_header2 {
+  background-color: #FB5607;
+}
+.starting-cards-section .cards_header3 {
+  background-color: #FF006E;
+}
+.starting-cards-section .cards_header4 {
+  background-color: #3A86FF;
+}
+.starting-cards-section > .row > .col-3 > .row {
+  padding: 0 11px;
+}
+.starting-cards-section .border-yel {
+  border: 1px #F7BC30 solid;
+}
+.starting-cards-section .border-ora {
+  border: 1px #FB5607 solid;
+}
+.starting-cards-section .border-pink {
+  border: 1px #FF006E solid;
+}
+.starting-cards-section .border-blue {
+  border: 1px #3A86FF solid;
+}
+.starting-cards-section .tasks-column .task-card {
+  margin-top: 30px;
+  border-radius: 15px;
+  padding: 20px;
+}
+.starting-cards-section .tasks-column .task-card .date_text {
+  font-size: 12px !important;
+}
+.starting-cards-section .tasks-column .task-card .priority-design {
+  gap: 10px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .priority_high {
+  border: 0.5px #FA4D4D solid;
+  border-radius: 5px;
+  padding: 4px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .priority_high img {
+  width: 16px;
+  height: 18px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .priority_high h5 {
+  font-family: "FiraGo-400", sans-serif;
+  color: #FA4D4D;
+  font-size: 12px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .priority_med {
+  border: 0.5px #FFBE0B solid;
+  border-radius: 5px;
+  padding: 4px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .priority_med img {
+  width: 16px;
+  height: 18px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .priority_med h5 {
+  font-family: "FiraGo-400", sans-serif;
+  color: #FFBE0B;
+  font-size: 12px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .priority_low {
+  border: 0.5px #08A508 solid;
+  border-radius: 5px;
+  padding: 4px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .priority_low img {
+  width: 16px;
+  height: 18px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .priority_low h5 {
+  font-family: "FiraGo-400", sans-serif;
+  color: #08A508;
+  font-size: 12px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .design {
+  background-color: #FF66A8;
+  padding: 7px 14px;
+  border-radius: 15px;
+}
+.starting-cards-section .tasks-column .task-card .priority-design .design h5 {
+  font-size: 12px !important;
+}
+.starting-cards-section .tasks-column .task-card .redberry-header {
+  margin-top: 28px;
+  padding: 0 10px;
+}
+.starting-cards-section .tasks-column .task-card .redberry-header h1 {
+  font-family: "FiraGo-500", sans-serif;
+  font-size: 15px;
+}
+.starting-cards-section .tasks-column .task-card .redberry-text {
+  margin-top: 12px;
+  padding: 0 10px;
+}
+.starting-cards-section .tasks-column .task-card .redberry-text p {
+  font-family: "FiraGo-400", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+.starting-cards-section .tasks-column .task-card .photo-comment-box {
+  margin-top: 28px;
+}
+.starting-cards-section .tasks-column .task-card .photo-comment-box .photo_element {
+  width: 31px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  border-radius: 50%;
 }/*# sourceMappingURL=styles.css.map */

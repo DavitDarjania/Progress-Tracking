@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 @font-face {
   font-family: "FiraGo-400";
-  src: url(../fonts/FiraGO-Regular.otf);
+  src: url(../fonts/FiraGO-Regular.ttf);
+}
+@font-face {
+  font-family: "FiraGo-500";
+  src: url(../fonts/FiraGO-Medium.ttf);
 }/*# sourceMappingURL=variables.css.map */

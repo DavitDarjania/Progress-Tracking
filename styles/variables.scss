@@ -4,16 +4,40 @@
     color: $font-color;
     background-color: $backcolor;
 }
+@mixin priority_change($priority_color){
+    border: 0.5px $priority_color solid;
+    border-radius: 5px;
+    padding: 4px;
+    img{
+        width: 16px;
+        height: 18px;
+    }
+    h5{
+        font-family: $main_font400;
+        color: $priority_color;
+        font-size: 12px;
+    }
+}
 
 @font-face {
     font-family: "FiraGo-400";
-    src: url(../fonts/FiraGO-Regular.otf);
+    src: url(../fonts/FiraGO-Regular.ttf);
+}
+
+@font-face {
+    font-family: "FiraGo-500";
+    src: url(../fonts/FiraGO-Medium.ttf);
 }
 
 $header_fontFamily: "Fredoka", sans-serif;
 $main_color: #8338EC;
-$main_font: 'FiraGo-400', sans-serif;
-
+$main_font400: 'FiraGo-400', sans-serif;
+$main_font500: 'FiraGo-500', sans-serif;
+$assignmentStartingColor : #F7BC30;
+$assignmentProgressColor : #FB5607;
+$assignmentReadyColor : #FF006E;
+$assignmentCompletedColor : #3A86FF;
+ 
 $hover_color: #B588F4;
 $filter_color: #DEE2E6;
 

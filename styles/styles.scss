@@ -6,7 +6,7 @@
 
 .main-font{
     font-size: 16px;
-    font-family: $main_font;
+    font-family: $main_font400;
     font-weight: 400;
 }
 
@@ -67,13 +67,16 @@
         border-radius: 10px;
         gap: 45px;
         margin-top: 50px;
+        .filter_active{
+            color: $main_color;
+        }
         .department, .priority, .employee{
             width: 199px;
             height: 44px;
             cursor: pointer;
         }
-        .filter_name{
-            font-family: $main_font;
+        [class^="filter_name"]{
+            font-family: $main_font400;
             font-size: 16px;
         }
         .filter_icon{
@@ -87,6 +90,18 @@
         top: 100%;
         padding: 40px 30px 20px 30px;
         display: none;
+        background-color: white;
+        .selecting_button1,.selecting_button2,.selecting_button3{
+            padding: 8px 20px;
+            background-color: $main_color;
+            color: white;
+            font-family: $main_font400;
+            font-size: 16px;
+            border-radius: 20px;
+        }
+        .selecting_button1:hover, .selecting_button2:hover, .selecting_button3:hover{
+            background-color: $hover_color;
+        }
         .custom-checkbox {
             display: flex;
             align-items: center;
@@ -119,4 +134,101 @@
         }
         
     }
+}
+.starting-cards-section{
+    margin-top: 70px;
+    .cards_header1, .cards_header2, .cards_header3,.cards_header4{
+        padding: 15px 0;
+        border-radius: 10px;
+        h5{
+            font-family: $main_font400;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+    .cards_header1{
+        background-color: $assignmentStartingColor;
+    }
+    .cards_header2{
+        background-color: $assignmentProgressColor;
+    }
+    .cards_header3{
+        background-color: $assignmentReadyColor;
+    }
+    .cards_header4{
+        background-color: $assignmentCompletedColor;
+    }
+    &> .row > .col-3 > .row{
+        padding: 0 11px;
+    }
+.border-yel{
+    border: 1px #F7BC30 solid;
+}
+.border-ora{
+    border: 1px #FB5607 solid;
+}
+.border-pink{
+    border: 1px #FF006E solid;
+}
+.border-blue{
+    border: 1px #3A86FF solid
+}
+    .tasks-column{
+        .task-card{
+            margin-top: 30px;
+            border-radius: 15px;
+            padding: 20px;
+            .date_text{
+                font-size: 12px !important;
+            }
+            .priority-design{
+                gap: 10px;
+                .priority_high{
+                    @include priority_change(#FA4D4D);
+                }
+                .priority_med{
+                    @include priority_change(#FFBE0B);
+                }
+                .priority_low{
+                    @include priority_change(#08A508);
+                }
+                .design{
+                    background-color: #FF66A8;
+                    padding: 7px 14px;
+                    border-radius: 15px;
+                    h5{
+                        font-size: 12px !important;
+                    }
+                }
+            }
+            .redberry-header{
+                margin-top: 28px;
+                padding: 0 10px;
+                h1{
+                    font-family: $main_font500;
+                    font-size: 15px;
+                }
+            }
+            .redberry-text{
+                margin-top: 12px;
+                padding: 0 10px;
+                p{
+                    font-family: $main_font400;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .photo-comment-box{
+                margin-top: 28px;
+                .photo_element{
+                    width: 31px;
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                    object-position: top center;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    
 }
