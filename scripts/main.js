@@ -1,5 +1,4 @@
 import apiObj from "./api.js"
-import taskfunc from "./tasks.js"
 
 let getDepartmentArray
 let getPriorityArray
@@ -102,7 +101,7 @@ async function getAsyncElement(){
 
         element.status.name == "დასაწყები" ? assignmentHeaderYel.insertAdjacentHTML("afterend", `
             <div class="col-12 task-card border-yel d-flex flex-column align-items-start">
-                  <div class="priority-design-date w-100 border border-dark d-flex justify-content-between align-items-center">
+                  <div class="priority-design-date w-100 d-flex justify-content-between align-items-center">
                     <div class="priority-design d-flex">
                       <div class="${element.priority.name == 'მაღალი' ? "priority_high" : element.priority.name == 'საშუალო' ? "priority_med" : element.priority.name == 'დაბალი' ? "priority_low" : console.log("error")
                       } d-flex justify-content-center align-items-center">
@@ -130,7 +129,7 @@ async function getAsyncElement(){
                   </div>
             </div>`) : element.status.name == "პროგრესში" ? assignmentHeaderOra.insertAdjacentHTML("afterend", `
                 <div class="col-12 task-card border-ora d-flex flex-column align-items-start">
-                      <div class="priority-design-date w-100 border border-dark d-flex justify-content-between align-items-center">
+                      <div class="priority-design-date w-100 d-flex justify-content-between align-items-center">
                         <div class="priority-design d-flex">
                           <div class="${element.priority.name == 'მაღალი' ? "priority_high" : element.priority.name == 'საშუალო' ? "priority_med" : element.priority.name == 'დაბალი' ? "priority_low" : console.log("error")
                           } d-flex justify-content-center align-items-center">
@@ -159,7 +158,7 @@ async function getAsyncElement(){
                 </div>`)
                 : element.status.name == "მზად ტესტირებისთვის" ? assignmentHeaderPink.insertAdjacentHTML("afterend", `
                     <div class="col-12 task-card border-pink d-flex flex-column align-items-start">
-                          <div class="priority-design-date w-100 border border-dark d-flex justify-content-between align-items-center">
+                          <div class="priority-design-date w-100 d-flex justify-content-between align-items-center">
                             <div class="priority-design d-flex">
                               <div class="${element.priority.name == 'მაღალი' ? "priority_high" : element.priority.name == 'საშუალო' ? "priority_med" : element.priority.name == 'დაბალი' ? "priority_low" : console.log("error")
                               } d-flex justify-content-center align-items-center">
@@ -187,7 +186,7 @@ async function getAsyncElement(){
                           </div>
                     </div>`) : element.status.name == "დასრულებული" ? assignmentHeaderBlue.insertAdjacentHTML("afterend", `
                         <div class="col-12 task-card border-blue d-flex flex-column align-items-start">
-                              <div class="priority-design-date w-100 border border-dark d-flex justify-content-between align-items-center">
+                              <div class="priority-design-date w-100 d-flex justify-content-between align-items-center">
                                 <div class="priority-design d-flex">
                                   <div class="${element.priority.name == 'მაღალი' ? "priority_high" : element.priority.name == 'საშუალო' ? "priority_med" : element.priority.name == 'დაბალი' ? "priority_low" : console.log("error")
                                   } d-flex justify-content-center align-items-center">
